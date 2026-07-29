@@ -35,16 +35,16 @@ Manual refund processing was creating bottlenecks for Pegipegi's Finance and Cus
 ### Interviews & Shadowing
 Conducted direct engagement sessions with Finance and CSO team members to understand operational workflows and pain points.
 
-- **Participants:** Finance team, Customer Service Operations (CSO) team
-- **Method:** In-person observation and workflow interviews
-- **Focus:** Identifying bottlenecks, manual steps, error-prone points
-- **Outcome:** Deep understanding of existing processes and emotional impact on teams
+- **Participants:** 7 team members (Finance team: 2, CSO team: 5) — the entire teams
+- **Duration:** 2 weeks of in-person observation and workflow interviews
+- **Method:** Shadowing actual refund processing, conducting open-ended interviews
+- **Focus:** Identifying bottlenecks, manual steps, error-prone points, and emotional impact
+- **Key finding:** Each refund took approximately one month to process end-to-end, mostly due to manual handoffs and lack of automation
 
 ### Stakeholder Feedback Collection
-Gathered insights on both emotional and operational impacts of current manual processes.
+Follow-up sessions with stakeholders to validate pain points and gather improvement priorities.
 
-- **Approach:** Follow-up sessions with stakeholders
-- **Questions:** What frustrates you? Where do errors happen? What takes the most time?
+- **Questions:** What frustrates you most? Where do errors happen? What takes the most time?
 - **Outcome:** Prioritized pain points and validated improvement opportunities
 
 ---
@@ -147,9 +147,9 @@ Conducted four design cycles with feedback from Product Manager, Finance team, a
 | Metric | Improvement |
 |--------|------------|
 | **Process Efficiency** | **76% improvement** |
-| **Refund Processing Time** | Significantly reduced (from manual multi-hour process to minutes for standard cases) |
-| **Manual Steps** | Reduced from 12+ to 2–3 per refund |
-| **Error Rate** | Eliminated data-entry errors through automation |
+| **Refund Processing Time** | Reduced from ~1 month to ~1 week (measured 3 months post-launch) |
+| **Manual Steps** | Reduced significantly through automation |
+| **Error Rate** | Eliminated data-entry errors through automated workflows |
 
 ### Secondary Benefits
 | Dimension | Impact |
