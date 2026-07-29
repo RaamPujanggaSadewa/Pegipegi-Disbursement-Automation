@@ -17,6 +17,12 @@
 
 ---
 
+![Disbursement workflow wireframe - low fidelity design](./pegipegi-disbursement-wireframe.svg)
+
+*Low-fidelity workflow design showing disbursement process optimization*
+
+---
+
 ## Problem Statement
 
 Manual refund processing was creating bottlenecks for Pegipegi's Finance and Customer Service Operations (CSO) teams. The current workflow involved:
