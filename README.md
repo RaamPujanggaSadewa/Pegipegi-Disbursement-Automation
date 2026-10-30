@@ -2,9 +2,9 @@
 
 **Redesigning a manual back-office refund workflow with the Finance and Customer Service teams, so travellers get their money in about a week instead of a month (76% faster).**
 
-[**Read the full case study →**](https://raam-portfolio-eta.vercel.app/work/pegipegi-refunds) · [Watch the 85-second video](https://raam-portfolio-eta.vercel.app/work/pegipegi-refunds#watch)
+[**Read the full case study →**](https://raamportfolio.vercel.app/work/pegipegi-refunds) · [Watch the 85-second video](https://raamportfolio.vercel.app/work/pegipegi-refunds#watch)
 
-[![The case study video](./video-poster.jpg)](https://raam-portfolio-eta.vercel.app/work/pegipegi-refunds#watch)
+[![The case study video](./video-poster.jpg)](https://raamportfolio.vercel.app/work/pegipegi-refunds#watch)
 
 ---
 
@@ -99,4 +99,4 @@ Back-office changes fail when the people doing the work don't trust them. I ran 
 
 ---
 
-[Raam Pujangga Sadewa](https://raam-portfolio-eta.vercel.app) · Product Design Engineer
+[Raam Pujangga Sadewa](https://raamportfolio.vercel.app) · Product Design Engineer
