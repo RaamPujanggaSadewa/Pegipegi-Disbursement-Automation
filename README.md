@@ -1,6 +1,10 @@
-# Pegipegi Disbursement Process Efficiency — Case Study
+# Pegipegi Refunds: Cutting Refund Time From a Month to a Week
 
-**Transforming manual refund processing into an automated system for operational scale**
+**Redesigning a manual back-office refund workflow with the Finance and Customer Service teams, so travellers get their money in about a week instead of a month (76% faster).**
+
+[**Read the full case study →**](https://raam-portfolio-eta.vercel.app/work/pegipegi-refunds) · [Watch the 85-second video](https://raam-portfolio-eta.vercel.app/work/pegipegi-refunds#watch)
+
+[![The case study video](./video-poster.jpg)](https://raam-portfolio-eta.vercel.app/work/pegipegi-refunds#watch)
 
 ---
 
@@ -8,220 +12,91 @@
 
 | | |
 |---|---|
-| **Project** | Disbursement Process Efficiency Redesign |
-| **Company** | Pegipegi |
-| **Role** | UX Designer |
-| **Duration** | 1.5 months |
-| **Type** | Internal operations workflow optimization |
-| **Industry** | Online Travel Agency (OTA) |
+| **Company** | Pegipegi, one of Indonesia's leading travel booking platforms (flights, hotels, trains) |
+| **Role** | UX Designer, working with the PM, the Finance and Customer Service teams, and engineering |
+| **Timeline** | 1.5 months, 2022 |
+| **Users** | Internal: the Finance and Customer Service teams |
+| **Methods** | Shadowing, interviews, process mapping, co-design sessions |
+| **Outcome** | A refund reaches the traveller in about a week instead of about a month: **76% faster** |
 
 ---
 
-![Disbursement workflow wireframe - low fidelity design](./pegipegi-disbursement-wireframe.svg)
+## Why this mattered
 
-*Low-fidelity workflow design showing disbursement process optimization*
+A refund usually follows a cancelled flight, hotel or train: a moment when the traveller is already let down. Waiting **about a month** for their money turned one bad experience into two, and every slow refund meant more follow-up for the teams handling it.
 
----
+The work behind each refund was almost entirely manual. That made it slow, and every manual step was another chance for a mistake.
 
-## Problem Statement
-
-Manual refund processing was creating bottlenecks for Pegipegi's Finance and Customer Service Operations (CSO) teams. The current workflow involved:
-
-- **Multi-step manual processes** prone to human error
-- **Processing delays** impacting customer satisfaction
-- **Inconsistent outcomes** across refund cases
-- **High cognitive load** on internal teams, reducing efficiency
-
-**The challenge:** Design an automated system that streamlines refund workflows, reduces manual intervention, and improves both speed and accuracy while maintaining visibility and control for Finance and CSO teams.
+The problem came to me from the PM: why does a refund take so long?
 
 ---
 
-## Research Methodology
+## Where the month went
 
-### Interviews & Shadowing
-Conducted direct engagement sessions with Finance and CSO team members to understand operational workflows and pain points.
+There was no screen to redesign; it was a process. So I shadowed and interviewed the two teams who handled every refund, **Finance and Customer Service**, and mapped a single refund from request to payout.
 
-- **Participants:** 7 team members (Finance team: 2, CSO team: 5) — the entire teams
-- **Duration:** 2 weeks of in-person observation and workflow interviews
-- **Method:** Shadowing actual refund processing, conducting open-ended interviews
-- **Focus:** Identifying bottlenecks, manual steps, error-prone points, and emotional impact
-- **Key finding:** Each refund took approximately one month to process end-to-end, mostly due to manual handoffs and lack of automation
+**The delay wasn't one slow step. It was the manual work between the steps.**
 
-### Stakeholder Feedback Collection
-Follow-up sessions with stakeholders to validate pain points and gather improvement priorities.
+![The old refund process: every step done by hand](./process-before.png)
 
-- **Questions:** What frustrates you most? Where do errors happen? What takes the most time?
-- **Outcome:** Prioritized pain points and validated improvement opportunities
+- **Customer Service** created each refund request by hand, then contacted travellers to validate their details.
+- **Finance** sorted and grouped the requests by payment method, then checked every request's data one by one before approving.
+- If any detail was wrong, the request went all the way back to Customer Service, who had to contact the traveller again.
+- Neither team could easily see where a refund was, so requests stalled between them.
 
 ---
 
-## Key Insights
+## Three decisions
 
-### 1. Automation as a Force Multiplier
-Manual refund processing was a significant source of team frustration and inefficiency. Automating task assignment and status tracking would free internal teams to focus on exception handling and customer communication.
+### 1. Let the system do the sorting
 
-### 2. Cross-functional Visibility Matters
-Finance and CSO teams needed aligned visibility into refund status at each stage. Misalignment between teams led to duplicate work and customer confusion.
+- **Context:** Finance spent its time grouping requests by payment method before any real checking started.
+- **Instead of:** giving Finance a better spreadsheet or filters.
+- **Why:** grouping follows fixed rules, so it doesn't need a person. Removing it frees Finance for the checks that do.
+- **Result:** the new flow groups requests by payment method automatically.
 
-### 3. Hidden Inefficiencies Require Direct Observation
-The most impactful improvements weren't obvious from high-level process maps. Shadowing revealed micro-inefficiencies: context switching between systems, manual data entry, status verification steps that could be automated.
+### 2. Ask the traveller directly, not through a person
 
-### 4. Internal Users Need Intuitive Design
-Unlike customer-facing products, internal tools are often neglected from a UX perspective. Simple, intuitive design for Finance and CSO teams would accelerate adoption and reduce training time.
+- **Context:** Customer Service had to contact travellers one by one to confirm their refund details.
+- **Instead of:** adding a checklist to make the manual follow-up faster.
+- **Why:** the traveller is the person who knows their details. Asking them directly removes a round trip between two people.
+- **Result:** the system now contacts travellers to validate their data, a step that used to be manual.
 
----
+### 3. One dashboard both teams share
 
-## Design Process (Design Thinking Framework)
+- **Context:** refunds stalled because neither team could see where a request was.
+- **Instead of:** separate tools for each team, with handoffs over chat.
+- **Why:** a shared view of every refund and its status removes the "where is this one?" questions between teams.
+- **Result:** a payment-out dashboard listing every refund, its status and the next action.
 
-### Phase 1: Empathize
-Conducted empathy sessions with Finance and CSO teams to deeply understand pain points in refund workflows.
+![The new refund process: entry, sorting and follow-up are automated](./process-after.png)
 
-- **Activities:** Workflow observation, team interviews, pain point mapping
-- **Outcome:** Comprehensive understanding of current state and emotional drivers
-
-### Phase 2: Define
-Mapped the existing refund process end-to-end and documented inefficiencies and decision points.
-
-- **Activities:** Process mapping, bottleneck identification, root-cause analysis
-- **Deliverable:** Detailed current-state process map highlighting manual steps and error-prone areas
-
-### Phase 3: Ideate
-Brainstormed automation and streamlining solutions with stakeholders (Product, Finance, CSO).
-
-- **Activities:** Workshop sessions with cross-functional teams
-- **Ideas explored:**
-  - Automated task assignment based on refund type
-  - Real-time status dashboard for Finance and CSO
-  - Integration with existing payment systems
-  - Automated approval workflows for standard refund scenarios
-- **Outcome:** Prioritized solution set with stakeholder buy-in
-
-### Phase 4: Prototype
-Created low-fidelity and high-fidelity prototypes of the proposed internal dashboard.
-
-- **Scope:** Task management interface, refund status tracking, automation triggers
-- **Tools:** Figma for UI/UX design
-- **Focus:** Intuitive information hierarchy, clear workflow progression, error prevention
-
-### Phase 5: Test & Iterate
-Conducted four design cycles with feedback from Product Manager, Finance team, and CSO team.
-
-- **Cycle 1:** Low-fidelity prototype walkthrough with stakeholders
-- **Cycle 2:** Refinement based on feedback (improved task filtering, added bulk actions)
-- **Cycle 3:** High-fidelity design review with Finance and CSO for operational realism
-- **Cycle 4:** Final refinement and handoff specifications for development
-
-**Feedback incorporated:**
-- Task prioritization logic from Finance team
-- Customer context requirements from CSO team
-- Integration points with existing payment systems from Product
+In the new process, Customer Service enters one field and the rest of the request fills itself in, the system groups requests by payment method, and the system asks travellers to confirm their own details. **Finance still checks each request**: the point was to remove the handwork between the steps, not the checks that matter.
 
 ---
 
-## Design Decisions
+## Getting both teams on board
 
-### 1. Automated Task Assignment Over Manual Queue
-**Decision:** Route refund tasks automatically based on type, amount, and complexity rather than manual queue management.
+Back-office changes fail when the people doing the work don't trust them. I ran brainstorming sessions with Finance, Customer Service and product, then took the design through **4 rounds of feedback** with the PM and both teams until everyone signed off.
 
-**Rationale:** Eliminates context switching and ensures tasks reach the right specialist immediately. Reduces processing time per refund.
+![Two days of dashboard explorations, August 2022](./explorations.png)
 
-### 2. Real-Time Status Dashboard
-**Decision:** Provide a unified dashboard for both Finance and CSO teams to track refund status in real-time.
-
-**Rationale:** Eliminates need for cross-team status checks and manual updates. Increases transparency and reduces delays in customer communication.
-
-### 3. Approval Automation for Standard Cases
-**Decision:** Automate approval workflows for refunds meeting predefined criteria (amount threshold, refund reason, customer history).
-
-**Rationale:** Majority of refunds follow standard patterns. Automating standard approvals frees Finance team for exceptions and high-value cases.
-
-### 4. Exception-Handling Interface
-**Decision:** Create a dedicated interface for non-standard refunds requiring manual review and decision-making.
-
-**Rationale:** Keeps workflows efficient for standard cases while maintaining control and visibility for edge cases and high-risk refunds.
-
-### 5. Intuitive Internal Design
-**Decision:** Apply UX design principles to the internal dashboard despite it being "back-office" software.
-
-**Rationale:** Reduces training time, minimizes errors from confusion, and accelerates team adoption.
+![An early low-fidelity workflow](./pegipegi-disbursement-wireframe.svg)
 
 ---
 
-## Outcomes & Metrics
+## Impact
 
-### Primary Impact
-| Metric | Improvement |
-|--------|------------|
-| **Process Efficiency** | **76% improvement** |
-| **Refund Processing Time** | Reduced from ~1 month to ~1 week (measured 3 months post-launch) |
-| **Manual Steps** | Reduced significantly through automation |
-| **Error Rate** | Eliminated data-entry errors through automated workflows |
+| | |
+|---|---|
+| **About 1 month → about 1 week** | for a refund to reach the traveller |
+| **76%** | faster |
 
-### Secondary Benefits
-| Dimension | Impact |
-|-----------|--------|
-| **Customer Satisfaction** | Faster refunds = higher NPS |
-| **Team Morale** | Reduced repetitive work, focus on value-add tasks |
-| **Operational Visibility** | Real-time dashboard provides Finance leadership with process insights |
+## What I'd do differently
+
+- **Measure more than speed.** Tracking errors and refund-related contacts would show the full effect on both teams and travellers.
+- **Treat internal tools like products.** The people using them every day are users too, and their speed becomes the customer's experience.
 
 ---
 
-## Implementation & Adoption
-
-### Stakeholder Alignment
-- **Finance Team:** Reduced manual workload, improved audit trail
-- **CSO Team:** Faster customer resolution, better context visibility
-- **Product Manager:** Operational efficiency gain, customer-facing quality improvement
-- **Engineering:** Clear specifications and handoff from design
-
-### Rollout Strategy
-- Soft launch with Finance team for standard refund cases
-- CSO team onboarding with training on new dashboard interface
-- Monitoring and refinement based on real-world usage patterns
-
----
-
-## Tools & Technologies
-
-- **Research:** In-person interviews, workflow shadowing
-- **Design:** Figma (dashboard design, prototyping)
-- **Collaboration:** Cross-functional workshops with Product, Finance, CSO
-- **Specification:** Design handoff documentation for development
-
----
-
-## Key Learnings
-
-### 1. Internal Tools Deserve UX Investment
-Back-office software is often neglected from a UX perspective, but poor UX in internal tools directly impacts efficiency and team satisfaction. Investing in UX for internal workflows pays dividends.
-
-### 2. Shadowing Reveals Hidden Inefficiencies
-High-level process maps miss micro-inefficiencies. Direct observation of how teams actually work—not how they think they work—uncovers the most impactful improvement opportunities.
-
-### 3. Automation Without Context Creates New Problems
-Simply automating a bad process makes a fast bad process. The design had to include exception-handling and override capabilities to maintain control and trust.
-
-### 4. Cross-functional Buy-in Accelerates Implementation
-Involving Finance, CSO, and Product in ideation and testing meant fewer surprises during implementation and faster adoption post-launch.
-
-### 5. Process Efficiency is a Design Problem
-Operational efficiency isn't just about technology—it's about thoughtful design of workflows, information architecture, and decision-making interfaces. UX design can be as impactful on operations as on customer-facing products.
-
----
-
-## Impact & Scale
-
-**Quantified Outcome:** 76% improvement in disbursement process efficiency
-
-**Qualitative Outcome:** 
-- Enabled Finance team to scale refund processing without proportional headcount increase
-- Improved customer refund experience through faster processing
-- Set a precedent for applying UX design to internal operational workflows
-
----
-
-## Reflection
-
-This project demonstrated that **operational efficiency is a design problem**. By applying user-centered design principles to internal workflows—not just customer-facing products—Pegipegi was able to achieve significant efficiency gains. The 76% improvement wasn't from a single feature, but from a holistic redesign of the process, interface, and automation strategy.
-
-The work also highlighted the often-overlooked value of investing in UX for internal tools. Teams using poorly designed systems sacrifice efficiency daily. Better design for internal users compounds across the entire organization.
+[Raam Pujangga Sadewa](https://raam-portfolio-eta.vercel.app) · Product Design Engineer
